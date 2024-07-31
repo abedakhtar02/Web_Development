@@ -4,63 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            }
+        fieldset{
+            display: inline;
+        }
+        h1{
+            /* text-align: center; */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to codehelp</h1>
-    <h3>Contact us form</h3>
+    <h1>Welcome to Developer's World</h1>
 
-    <form action="">
-        <label for="name">Name:</label>
-        <input type="text" id="name">
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email">
-        <br>
-        <label for="contact">Contact Number:</label>
-        <input type="number" id="contact">
-        <br>
-        <label for="gender">Gender:</label>
-        
-        <select name="gender" id="gender">
-            <option value="" name="Choose your gender">---Choose your gender---</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="trans">Transgender</option>
-        </select>
-        <br>
-        <label for="dob">Date Of Birth</label>
-        <input type="date" id="dob">
-        <br>
-        
-        <label for="rating">Rating:</label>
-        <input type="radio" name="rating" id="1">
-        <label for="rating">1</label>
-        <input type="radio" name="rating" id="2">
-        <label for="rating">2</label>
-        <input type="radio" name="rating" id="3">
-        <label for="rating">3</label>
-        <input type="radio" name="rating" id="4">
-        <label for="rating">4</label>
-        <input type="radio" name="rating" id="5">
-        <label for="rating">5</label>
-       <br>
-        <label for="message">Enter your message</label><br>
-        <textarea name="textarea" id="message" cols="30" rows="5">Enter your message</textarea>
-        <br>
-        <button>send</button>
-        <button>reset</button>
-        <br>
-        <br>
-        
-        <a href="https://www.facebook.com/">
-            <img src="/day03/facebook.png" alt="fb" style="height: 20px;">
-        </a>
-        <a href="https://www.instagram.com/">
-            <img src="/day03/instagram.png" alt="ig" style="height: 20px;">
-        </a>
-        <a href="https://www.linkedin.com/in/abed-akhtar-2a109428b">
-            <img src="/day03/linkedin.png" alt="lin" style="height: 20px;">
-        </a>
-    </form>
+    <fieldset>
+        <legend>Contact us form</legend>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <br>
+            <label for="contact">Contact Number:</label>
+            <input type="number" id="contact">
+            <br>
+            <label for="gender">Gender:</label>
+            
+            <select name="gender" id="gender">
+                <option value="" name="Choose your gender">---Choose your gender---</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="trans">Transgender</option>
+            </select>
+            <br>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob">
+            <br>
+            
+            <label for="rating">Rating:</label>
+            <input type="radio" name="rating" id="1">
+            <label for="rating">1</label>
+            <input type="radio" name="rating" id="2">
+            <label for="rating">2</label>
+            <input type="radio" name="rating" id="3">
+            <label for="rating">3</label>
+            <input type="radio" name="rating" id="4">
+            <label for="rating">4</label>
+            <input type="radio" name="rating" id="5">
+            <label for="rating">5</label>
+           <br>
+            <label for="message">Enter your message</label><br>
+            <textarea name="textarea" id="message" cols="30" rows="5" placeholder="Enter your message"></textarea>
+            <br>
+            <button>send</button>
+            <button>reset</button>
+            <br>
+            <br>
+            
+            <a href="https://www.facebook.com/">
+                <img src="/day03/facebook.png" alt="fb" style="height: 20px;">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="/day03/instagram.png" alt="ig" style="height: 20px;">
+            </a>
+            <a href="https://www.linkedin.com/in/abed-akhtar-2a109428b">
+                <img src="/day03/linkedin.png" alt="lin" style="height: 20px;">
+            </a>
+        </form>
+
+    </fieldset>
+    
 </body>
 </html>
