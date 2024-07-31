@@ -1,0 +1,28 @@
+#box{
+    border: 1px solid black;
+    height: 150px;
+    width: 400px;
+    background-image: linear-gradient(to top left ,blue,green,white);
+}
+.mydiv{
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    /* border-radius: 50%; */
+    text-align: center;
+     align-content: center;
+    background-image: radial-gradient(red,yellow,green);
+}
+
+.conic{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    background-image: conic-gradient(red,yellow,green);
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+
+
+}
