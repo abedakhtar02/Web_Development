@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linus Torvalds</title>
     <style>
+        #figure{
+            text-align: center;
+        }
         html{
             scroll-behavior: smooth;
         }
@@ -13,24 +16,38 @@
             width: 40%;
             float: right;
         }
+        .div1{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        #link:hover{
+            color:brown;
+        }
     </style>
 </head>
 <body>
-    <h1>Linus Torvalds</h1>
+    <div class="div1">
+        <h1>Linus Torvalds</h1>
     <p>The Creator Of Linux</p>
-    <a href="#resources">go to Resources</a>
-    <figure>
+    <ul>
+        <li><a href="#resources">go to Resources</a></li>
+    </ul>
+    
+    <figure id="figure">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Lc3_2018_%28263682303%29_%28cropped%29.jpeg/330px-Lc3_2018_%28263682303%29_%28cropped%29.jpeg" alt="Image" style="height: 300px;">
         <figcaption>A photograph of Linus Torvalds</figcaption>
     </figure>
+    </div>
+    
     <section>
-    <h3>Biography</h3>
+    <h3  style="color:turquoise;">Biography</h3>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae suscipit magni dignissimos est nemo iusto doloribus ipsum, dolorem similique explicabo maiores officiis debitis commodi perferendis facilis non at harum eligendi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum incidunt est quo fuga quis ratione adipisci exercitationem, nemo id, ut, dolore tenetur alias? Dolorem saepe officiis odit velit sequi! Suscipit.</p>
 
     <aside>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint quibusdam recusandae modi tempore, minima, quis maiores, necessitatibus autem qui consectetur reprehenderit? Voluptatum assumenda illum, expedita consequuntur praesentium nostrum delectus fuga necessitatibus nam possimus labore magni ipsam maiores, animi vero veritatis ut exercitationem, nulla suscipit aliquam? Quidem eveniet perspiciatis, sequi quibusdam atque pariatur ut quam aliquam, molestias deleniti iste voluptatum modi magni dolorem, delectus esse? Omnis sed ut debitis in?
     </aside>
-    <h3>Achievement</h3>
+    <h3 style="color: blueviolet;">Achievement</h3>
     <ul>
         <li><b>1991</b> - Created the Linux</li>
         <li><b>2004</b> - xyz</li>
@@ -56,7 +73,7 @@
     <h3 id="resources">Resources</h3>
     <p>Learn more about Linus Torvalds and his work</p>
     <ul>
-        <li><a href="">Wikipedia page on linus Torvalds</a></li>
+        <li><a href="" id="link">Wikipedia page on linus Torvalds</a></li>
         <li><a href="">Linus torvald"s personal website</a></li>
         <li><a href="">The Linus Kernal Archives</a></li>
     </ul>
