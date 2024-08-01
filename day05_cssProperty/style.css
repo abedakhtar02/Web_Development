@@ -31,16 +31,22 @@ div{
     width: 100px;
     background-color: aquamarine;
     /* margin: 5px; */
-    display:inline-block;
+    /* display:inline-block; */
 }
 
 #box3{
     position: relative;
+    /* top: 200px; */
+    transform: translate(50px,20px);
+    /* transform: rotate(360deg); */
+    /* transform: scale(2,2); */
+    /* transform: skew(150deg); */
    
 }
 #box4{
-    position: sticky;
-    top: 0px;
+    /* transform: translate(-50px,200px); */
+    transform: perspective(30px) translateZ(-20px) ;
+
 }
 .wrapper{
     border: 1px solid;
