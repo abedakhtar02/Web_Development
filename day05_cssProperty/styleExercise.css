@@ -1,0 +1,40 @@
+.wrapper{
+    height: 400px;
+    width :400px;
+    border: 1px solid;
+    background-image: linear-gradient(rgb(34, 85, 89),aqua,magenta,red);
+    position: relative;
+   
+}
+.span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    border: 1px solid;
+    /* width:50px; */
+}
+#span1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#span2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#span3{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#span4{
+    position: absolute;
+    left: 0;
+    bottom: 0;    
+}
+#span5{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
