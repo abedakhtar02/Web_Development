@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    height:100vh
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transform-style: preserve-3d;
+
+}
+
+.background,.foreground{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(4);
+}
+
+h1{
+    position: absolute;
+    top:3rem;
+    /* styling of text here */
+}
