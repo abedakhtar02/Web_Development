@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    height: 700px;
+    
+    border: 1px solid black;
+    background-color:darkblue;
+    display: grid;
+
+    grid-template-columns: 100px 300px 100px; 
+    grid-template-rows: 100px 400px 100px;
+
+    grid-template-areas: 
+    "hd hd hd"
+    "sd main asd" 
+    "ft ft ft";
+
+}
+
+.box{
+    border: 1px solid black;
+    background-color: beige;
+    
+    
+}
+#head{
+    grid-area: hd;
+}
+#side{
+    grid-area: sd;
+}
+#aside{
+    grid-area: asd;
+}
+
+#main{
+    grid-area: main;
+}
+#foot{
+    grid-area: ft;
+}
