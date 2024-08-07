@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+}
+img{
+    width: 80px;
+}
+.logo-container{
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    
+}
+#logo-text{
+    /* border: 1px solid; */
+    font-size: 28px;
+    margin-left: -1.2rem;
+    user-select:none;
+   
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 4rem;
+
+}
+.nav-items div{
+    font-size:  20px;
+    font-weight: 500 ;
+    cursor: pointer;
+
+    
+}
+.nav-items div a{
+    color: black;
+}
+.nav-items div:hover{
+    transition: 0.8s ;
+    font-weight: bold;
+
+}
+a{
+    text-decoration: none;
+}
+
+
+.hero-section{
+    position: relative;
+    display: flex;
+    
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+
+    gap: 5rem;
+    margin :4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+}
+.username-text{
+    position: absolute;
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231,231,231);
+
+    bottom: -16%;
+    left: 5%;
+    font-weight: bold;
+    transition: all 3s;
+   
+}
+.hero-heading{
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+.role{
+    color:#4e45d5  ;
+    font-weight: 800;
+} 
+.hero-sub-heading{
+    font-size: 45px;
+    line-height: 45px;
+}
+.hero-desc{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35rem;
+    height: 20rem;
+    gap: 2rem;
+}
+.button{
+    margin-top: 1.5rem ;
+    width: 6rem;
+    padding: 0.5rem 1rem;
+    background-color: #e84949;
+    font-size: 18px;
+    color: white;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative ;
+    z-index: 1;
+
+}
+.button::before{
+    content:"";
+    background-color: #1f1f1f;
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    
+    transform: scaleX(0);
+    transform-origin: left ;
+    transition:  0.8s ;
+    z-index: -1;
+
+}
+.button:hover::before{
+    transform: scaleX(1);
+}
+
+.userimage{
+    height:17.5rem;
+    width: 15.8rem;
+
+    padding: 20px;
+    animation: scaleimage 5s linear infinite ;
+}
+@keyframes scaleimage{
+    0%{
+        filter:grayscale(0);
+        transform: scale(1);
+        box-shadow: 3px 3px 10px black;
+
+    }
+    50%{
+        filter:grayscale(1);
+        transform: scale(1.1);
+        box-shadow: none;
+    }
+    100%{
+        transform: scale(1);
+        filter:grayscale(0);
+        box-shadow: 3px 3px 10px black;
+
+    }
+}
