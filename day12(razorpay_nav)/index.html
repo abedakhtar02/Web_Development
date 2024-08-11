@@ -7,10 +7,26 @@
     <title>Razorpay</title>
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        .companiesList{
+            animation: 10s infinite linear moveCompany;
+        }
+        @keyframes moveCompany {
+            0%{
+                top:0;
+            }
+            100%{
+                top:-100%;
+            }
+        }
+    </style>
+
 </head>
 <body>
-    <!-- navBar -->
-    <nav class="bg-deepBlue ">
+    <!----------------------------------------------- navBar --------------------------------------->
+
+    <nav 
+    class="bg-deepBlue ">
         <div class="relative w-[1080px] font-mullish mx-auto flex justify-between items-center">
             
             <a href="/" class="cursor-pointer py-7 pr-7">
@@ -80,8 +96,10 @@
         </div>
     </nav>
 
-    <!-- hero-section -->
-    <section class="relative bg-deepBlue">
+    <!-------------------------------------------- hero-section ----------------------------------->
+
+    <section 
+    class="relative bg-deepBlue">
         
         <div class="max-w-[1080px] flex w-10/12 justify-between items-center mx-auto ">
             <!-- left part -->
@@ -109,8 +127,10 @@
 
     </section>
 
-    <!-- feature section -->
-    <section class="relative mt-[190px] overflow-hidden">
+    <!------------------------------------------- feature section --------------------------------->
+
+    <section 
+    class="relative mt-[190px] overflow-hidden">
 
         <img src="./Images/feature-section1-dottedrows.png" alt="" height="167" width="233" 
         class="absolute -top-[8rem] left-[10rem] inline-block">
@@ -165,8 +185,8 @@
                         <button class="p-3 px-4 bg-lightBlue hover:bg-lightBlue500 transition-all duration-200 rounded-sm text-white text-sm font-semibold">Sign Up Now</button>
 
                         <div class="flex items-center group">
-                            <a href="#" class="cursor-pointer text-lightBlue500 font-bold hover:text-grayBlue">Know More</a>
-                            <i data-feather="chevron-right" class="w-5 h-5 z-50 text-lightBlue500"></i>
+                            <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                            <i data-feather="chevron-right" class="w-5 h-5 z-50 text-lightBlue500 group-hover:text-grayBlue"></i>
                         </div>
 
                     </div>
@@ -175,24 +195,630 @@
                 <img src="./Images/payment-suite.png" alt="" class="absolute max-w-[600px]  right-0 bottom-0" >
 
             </div>
+
+            <!--  cards -->
+
+            <div class=" w-full grid grid-cols-3 gap-4 grid-rows-2 font-mullish mt-10">
+           
+                <!-- box-1 -->
+                <div class="w-full min-h-[15rem] relative cursor-pointer ">
+                   <img src="./Images/payment-link-icon.svg" alt=""
+                   class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+   
+                   <!-- box shape -->
+   
+                   <svg 
+                   viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                           <path d="m 0 6 
+                           a 6 6 0 0 1 6 -6 
+                           h 250.32501220703125 
+                           a 16 16 0 0 1 11 5 
+                           l 77 77 
+                           a 16 16 0 0 1 5 11 
+                           v 126 
+                           a 6 6 0 0 1 -6 6 
+                           h -337.32501220703125 
+                           a 6 6 0 0 1 -6 -6 
+                           z" fill="#fff">
+                           </path>
+                   </svg>
+   
+                   <!-- box content -->
+   
+                   <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                       <!-- text part -->
+                       <div>
+                           <h3 class="font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                           <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                           </p>
+                       </div>
+   
+                       <!-- hyperlink -->
+   
+                       <div class="flex items-center ">
+                        <div class="flex group">
+                           <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                           <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                        </div>
+                       </div>
+                        
+                   </div>
+   
+               </div> 
+               <!-- box-2 -->
+               <div class="w-full min-h-[15rem] relative cursor-pointer">
+                   <img src="./Images/payment-link-icon.svg" alt=""
+                   class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+   
+                   <!-- box shape -->
+   
+                   <svg 
+                   viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                           <path d="m 0 6 
+                           a 6 6 0 0 1 6 -6 
+                           h 250.32501220703125 
+                           a 16 16 0 0 1 11 5 
+                           l 77 77 
+                           a 16 16 0 0 1 5 11 
+                           v 126 
+                           a 6 6 0 0 1 -6 6 
+                           h -337.32501220703125 
+                           a 6 6 0 0 1 -6 -6 
+                           z" fill="#fff">
+                           </path>
+                   </svg>
+   
+                   <!-- box content -->
+   
+                   <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                       <!-- text part -->
+                       <div>
+                           <h3 class="font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                           <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                           </p>
+                       </div>
+   
+                       <!-- hyperlink -->
+   
+                       <div class="flex items-center">
+                            <div class="flex group">
+                                <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                                <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                            </div>
+                        </div>
+                        
+                   </div>
+   
+               </div> 
+               <!-- box-3 -->
+               <div class="w-full min-h-[15rem] relative cursor-pointer">
+                   <img src="./Images/payment-link-icon.svg" alt=""
+                   class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+   
+                   <!-- box shape -->
+   
+                   <svg 
+                   viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                           <path d="m 0 6 
+                           a 6 6 0 0 1 6 -6 
+                           h 250.32501220703125 
+                           a 16 16 0 0 1 11 5 
+                           l 77 77 
+                           a 16 16 0 0 1 5 11 
+                           v 126 
+                           a 6 6 0 0 1 -6 6 
+                           h -337.32501220703125 
+                           a 6 6 0 0 1 -6 -6 
+                           z" fill="#fff">
+                           </path>
+                   </svg>
+   
+                   <!-- box content -->
+   
+                   <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                       <!-- text part -->
+                       <div>
+                           <h3 class="font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                           <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                           </p>
+                       </div>
+   
+                       <!-- hyperlink -->
+   
+                       <div class="flex items-center ">
+                            <div class="flex group">
+                                <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                                <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                            </div>
+                       </div>
+                        
+                   </div>
+   
+               </div> 
+               <!-- box-4 -->
+               <div class="w-full min-h-[15rem] relative cursor-pointer">
+                   <img src="./Images/payment-link-icon.svg" alt=""
+                   class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+   
+                   <!-- box shape -->
+   
+                   <svg 
+                   viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                           <path d="m 0 6 
+                           a 6 6 0 0 1 6 -6 
+                           h 250.32501220703125 
+                           a 16 16 0 0 1 11 5 
+                           l 77 77 
+                           a 16 16 0 0 1 5 11 
+                           v 126 
+                           a 6 6 0 0 1 -6 6 
+                           h -337.32501220703125 
+                           a 6 6 0 0 1 -6 -6 
+                           z" fill="#fff">
+                           </path>
+                   </svg>
+   
+                   <!-- box content -->
+   
+                   <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                       <!-- text part -->
+                       <div>
+                           <h3 class="font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                           <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                           </p>
+                       </div>
+   
+                       <!-- hyperlink -->
+   
+                       <div class="flex items-center ">
+                        <div class="flex group">
+                            <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                            <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                        </div>
+                   </div>
+                        
+                   </div>
+   
+               </div> 
+               <!-- box-5 -->
+               <div class="w-full min-h-[15rem] relative cursor-pointer">
+                   <img src="./Images/payment-link-icon.svg" alt=""
+                   class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+   
+                   <!-- box shape -->
+   
+                   <svg 
+                   viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                           <path d="m 0 6 
+                           a 6 6 0 0 1 6 -6 
+                           h 250.32501220703125 
+                           a 16 16 0 0 1 11 5 
+                           l 77 77 
+                           a 16 16 0 0 1 5 11 
+                           v 126 
+                           a 6 6 0 0 1 -6 6 
+                           h -337.32501220703125 
+                           a 6 6 0 0 1 -6 -6 
+                           z" fill="#fff">
+                           </path>
+                   </svg>
+   
+                   <!-- box content -->
+   
+                   <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                       <!-- text part -->
+                       <div>
+                           <h3 class="font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                           <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                           </p>
+                       </div>
+   
+                       <!-- hyperlink -->
+   
+                       <div class="flex items-center ">
+                        <div class="flex group">
+                            <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                            <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                        </div>
+                   </div>
+                        
+                   </div>
+   
+               </div> 
+               <!-- box-6 -->
+               <div class="w-full min-h-[15rem] relative cursor-pointer">
+                   <img src="./Images/payment-link-icon.svg" alt=""
+                   class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+   
+                   <!-- box shape -->
+   
+                   <svg 
+                   viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                           <path d="m 0 6 
+                           a 6 6 0 0 1 6 -6 
+                           h 250.32501220703125 
+                           a 16 16 0 0 1 11 5 
+                           l 77 77 
+                           a 16 16 0 0 1 5 11 
+                           v 126 
+                           a 6 6 0 0 1 -6 6 
+                           h -337.32501220703125 
+                           a 6 6 0 0 1 -6 -6 
+                           z" fill="#fff">
+                           </path>
+                   </svg>
+   
+                   <!-- box content -->
+   
+                   <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                       <!-- text part -->
+                       <div>
+                           <h3 class="font-bold text-deepBlueHead leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                           <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                           </p>
+                       </div>
+   
+                       <!-- hyperlink -->
+   
+                       <div class="flex items-center">
+                            <div class="flex group">
+                                <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                                <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                            </div>  
+                        </div>
+                        
+                   </div>
+   
+               </div> 
+           </div>
         </div>
     </section>
-    
-    <!-- <section>
-        <div class=" grid grid-cols-3 grid-rows-2  border">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
+           
+   <!------------------------------------------- feature section-2 -------------------------------->
+
+    <section 
+    class="bg-[url(./Images/feature-section-2BG.svg)]
+    bg-no-repeat bg-cover pt-[10rem] pb-[350px] mt-14">
+      
         
+    <div class="relative w-11/12 max-w-[1080px] pt-4 mx-auto font-mullish ">
+            
+        <h2 class="font-extrabold text-center text-2xl leading-[1.2] text-white">Explore Razorpay Business Banking</h2>
+        <div class="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>
+
+        <div class="w-full min-h-[440px] relative  ">
+                <img src="./Images/x-flame-1.png" alt="" 
+                loading="lazy" 
+                class="absolute -top-[142px] -left-[140px] w-[200px]">
+                
+                <img src="./Images/x-flame-2.png" alt=""
+                loading="lazy" 
+                class="absolute top-[150px] -right-[180px] w-
+                [200px]">
+
+            <!-- feature block -->
+
+            <div class="w-full min-h-[520px]  flex rounded-md relative p-10 py-12 z-1000 bg-[#181c2e] border border-slate-700">
+
+                <div class="flex flex-col w-full text-white">
+
+                <h3 class="mb-8 text-[28px] leading-10 max-w-[500px]  font-bold text-white">Mange your company's finances with
+                    <span class="text-greenLight">
+                        <img src="./Images/razorpayX.svg" alt="" class="h-[32px] inline-block">
+                        Business Banking
+                </span></h3>  
+
+                <ul class="space-y-2 mb-12">
+                    
+                    <li class="flex space-x-2">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>100+ Payment Methods</span>
+                    </li>
+                    <li class="flex space-x-2">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>Industry Leading Success Rate</span>
+                    </li>
+                    <li class="flex space-x-2">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>Superior Checkout Experience</span>
+                    </li>
+                    <li class="flex space-x-2">
+                        <i data-feather="check" class="text-greenLight"></i>
+                        <span>Easy to integrate</span>
+                    </li>
+                </ul>
+
+                <div class="flex flex-row items-center space-x-4">
+                        <button class="p-3 px-4 bg-lightBlue hover:bg-lightBlue500 transition-all duration-200 rounded-sm text-white text-sm font-semibold">Sign Up Now</button>
+
+                        <div class="flex items-center group">
+                            <a href="#" class="cursor-pointer text-lightBlue500 font-bold hover:text-grayBlue">Know More</a>
+                            <i data-feather="chevron-right" class="w-5 h-5 z-50 text-lightBlue500 group-hover:text-grayBlue"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <img src="./Images/buisness-banking.png" alt="" class="absolute max-w-[600px]  right-0 bottom-0" >
+
+                
+            </div>
+
+                <div class=" w-full grid grid-cols-3 gap-4 grid-rows-2 font-mullish mt-10">
+                
+                    <!-- box-1 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer ">
+                        <img src="./Images/payment-link-icon.svg" alt=""
+                        class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+
+                        <!-- box shape -->
+
+                        <svg 
+                        viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200 " style="stroke-opacity: 0.15">
+                                <path d="m 0 6 
+                                a 6 6 0 0 1 6 -6 
+                                h 250.32501220703125 
+                                a 16 16 0 0 1 11 5 
+                                l 77 77 
+                                a 16 16 0 0 1 5 11 
+                                v 126 
+                                a 6 6 0 0 1 -6 6 
+                                h -337.32501220703125 
+                                a 6 6 0 0 1 -6 -6 
+                                z" fill="#181C2E">
+                                </path>
+                        </svg>
+
+                        <!-- box content -->
+
+                        <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                            <!-- text part -->
+                            <div>
+                                <h3 class="font-bold text-white leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                                <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+
+                            <!-- hyperlink -->
+
+                            <div class="flex items-center group">
+                                <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                                <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                            </div>
+                                
+                        </div>
+
+                    </div> 
+                    <!-- box-2 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer">
+                        <img src="./Images/payment-link-icon.svg" alt=""
+                        class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+
+                        <!-- box shape -->
+
+                        <svg 
+                        viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                                <path d="m 0 6 
+                                a 6 6 0 0 1 6 -6 
+                                h 250.32501220703125 
+                                a 16 16 0 0 1 11 5 
+                                l 77 77 
+                                a 16 16 0 0 1 5 11 
+                                v 126 
+                                a 6 6 0 0 1 -6 6 
+                                h -337.32501220703125 
+                                a 6 6 0 0 1 -6 -6 
+                                z" fill="#181C2E">
+                                </path>
+                        </svg>
+
+                        <!-- box content -->
+
+                        <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                            <!-- text part -->
+                            <div>
+                                <h3 class="font-bold text-white leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                                <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+
+                            <!-- hyperlink -->
+
+                            <div class="flex items-center group">
+                                <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                                <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                            </div>
+                                
+                        </div>
+
+                    </div> 
+                    <!-- box-3 -->
+                    <div class="w-full min-h-[15rem] relative cursor-pointer">
+                    <img src="./Images/payment-link-icon.svg" alt=""
+                    class="bg-lightBlue absolute right-3 top-3 h-12 rounded-full z-[8] transition-all duration-200">
+
+                    <!-- box shape -->
+
+                    <svg 
+                    viewBox="0 0 349.32501220703125 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="stroke-1 stroke-[#818597] h-full w-full absolute z-[9] transition-all duration-200" style="stroke-opacity: 0.15">
+                            <path d="m 0 6 
+                            a 6 6 0 0 1 6 -6 
+                            h 250.32501220703125 
+                            a 16 16 0 0 1 11 5 
+                            l 77 77 
+                            a 16 16 0 0 1 5 11 
+                            v 126 
+                            a 6 6 0 0 1 -6 6 
+                            h -337.32501220703125 
+                            a 6 6 0 0 1 -6 -6 
+                            z" fill="#181C2E">
+                            </path>
+                    </svg>
+
+                    <!-- box content -->
+
+                    <div class="z-[100] absolute w-full h-full flex flex-col justify-between pl-5 py-6 pr-8">
+                        <!-- text part -->
+                        <div>
+                            <h3 class="font-bold text-white leading-[1.2] text-[1.375rem] " >Payment Links</h3>
+                            <p class="text-grayText mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+
+                        <!-- hyperlink -->
+
+                        <div class="flex items-center group">
+                            <a href="#" class="cursor-pointer text-lightBlue500 font-bold group-hover:text-grayBlue">Know More</a>
+                            <i data-feather="chevron-right" class="w-5 h-5 text-lightBlue500 group-hover:text-grayBlue"></i>
+                        </div>
+                            
+                    </div>
+
+                </div>
+
         </div>
-    </section> -->
+    </section>
 
+    <!----------------------------------------- join razorpay section ----------------------------->
 
+    <section
+     class="mb-[500px] font-mullish bg-[#f5f8fe] relative pt-40 pb-12 -mt-[200px] -z-10">
+        <!-- main div -->
+        <div class="flex w-11/12 max-w-[1080px] mx-auto">
+            <!-- left part -->
 
+            <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+                <h3 class="font-bold text-2xl text-deepBlueHead leading-10">Join the 50,00,000+ businesses using Razorpay</h3>
 
+                <div class="w-6 h-1 bg-greenLight my-4 mb-10 z-100"></div>
+
+                <p class="opacity-85">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam necessitatibus pariatur accusantium provident illo recusandae est maiores quidem modi officiis? Perferendis est aliquid tempora eum atque corporis optio id unde!</p>
+
+                <p class="mt-6 opacity-85">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quae?</p>
+            </div>
+
+            <!-- right(image) part -->
+
+            <div class="h-[500px] w-[500px] overflow-y-hidden relative">
+                <div style="background: linear-gradient(180deg, #f4f8ff, #fff0);"
+                class="absolute w-full h-[150px] top-0"></div>
+
+                <img src="./Images/comanies.png" alt=""
+                width="500px" class="absolute h-auto object-cover companiesList">
+                <div style="background: linear-gradient(0deg, #f4f8ff, #fff0);"
+                class="absolute w-full h-[150px] bottom-0"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!------------------------------------------------ Footer ------------------------------------->
+
+    <footer
+    style="background: linear-gradient(to right, #eef9fe, #edf7ff);"
+    class="-mt-[400px] md:-mt-[300px]">
+        <div class="flex font-mullish w-10/12 pt-[200px] pb-10 md:pt[350px] md:my-0 md:w-11/12 max-w-[1080px] mx-auto space-x-10">
+            <!-- column-1 -->
+            <div>
+                <img src="./Images/logo-dark.svg" alt=""
+                loading="lazy"
+                width="120px"
+                height="24px">
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error suscipit odio hic laboriosam, consequatur quidem quibusdam doloremque, unde, quod sequi voluptatibus deleniti nam quaerat animi? Quas ducimus sint dolore, quo soluta voluptatibus modi fugiat molestiae, hic nemo ut. Saepe quaerat autem nobis libero natus voluptas velit quo et veritatis!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur aliquam est ab officiis natus odit id corporis vitae autem molestias voluptates debitis consectetur velit vero. Quod accusamus accusantium nihil harum possimus voluptate quaerat tempore a impedit dolor? Consequatur maxime consectetur voluptate harum debitis perspiciatis vero recusandae facere qui fugiat!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias corrupti dolores temporibus voluptatum dignissimos vero magni, id impedit. Facilis iure eum eaque odit alias facere aperiam enim laboriosam quisquam voluptatum sed rerum tempore repellendus, ipsum deserunt iusto tenetur nemo!</p>
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum delectus unde. Totam aspernatur facilis corrupti minus velit! Deserunt?</p>
+                <h4></h4>
+                <div>
+                    <!-- <input type="text" name="" id=""> -->
+
+                </div>
+                <div class="flex">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+            <!-- column-2 -->
+            <div>
+                <img src="./Images/logo-dark.svg" alt=""
+                loading="lazy"
+                width="120px"
+                height="24px">
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error suscipit odio hic laboriosam, consequatur quidem quibusdam doloremque, unde, quod sequi voluptatibus deleniti nam quaerat animi? Quas ducimus sint dolore, quo soluta voluptatibus modi fugiat molestiae, hic nemo ut. Saepe quaerat autem nobis libero natus voluptas velit quo et veritatis!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur aliquam est ab officiis natus odit id corporis vitae autem molestias voluptates debitis consectetur velit vero. Quod accusamus accusantium nihil harum possimus voluptate quaerat tempore a impedit dolor? Consequatur maxime consectetur voluptate harum debitis perspiciatis vero recusandae facere qui fugiat!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias corrupti dolores temporibus voluptatum dignissimos vero magni, id impedit. Facilis iure eum eaque odit alias facere aperiam enim laboriosam quisquam voluptatum sed rerum tempore repellendus, ipsum deserunt iusto tenetur nemo!</p>
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum delectus unde. Totam aspernatur facilis corrupti minus velit! Deserunt?</p>
+                <h4></h4>
+                <div>
+                    <!-- <input type="text" name="" id=""> -->
+
+                </div>
+                <div class="flex">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+            <!-- column-3 -->
+            <div>
+                <img src="./Images/logo-dark.svg" alt=""
+                loading="lazy"
+                width="120px"
+                height="24px">
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error suscipit odio hic laboriosam, consequatur quidem quibusdam doloremque, unde, quod sequi voluptatibus deleniti nam quaerat animi? Quas ducimus sint dolore, quo soluta voluptatibus modi fugiat molestiae, hic nemo ut. Saepe quaerat autem nobis libero natus voluptas velit quo et veritatis!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur aliquam est ab officiis natus odit id corporis vitae autem molestias voluptates debitis consectetur velit vero. Quod accusamus accusantium nihil harum possimus voluptate quaerat tempore a impedit dolor? Consequatur maxime consectetur voluptate harum debitis perspiciatis vero recusandae facere qui fugiat!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias corrupti dolores temporibus voluptatum dignissimos vero magni, id impedit. Facilis iure eum eaque odit alias facere aperiam enim laboriosam quisquam voluptatum sed rerum tempore repellendus, ipsum deserunt iusto tenetur nemo!</p>
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum delectus unde. Totam aspernatur facilis corrupti minus velit! Deserunt?</p>
+                <h4></h4>
+                <div>
+                    <!-- <input type="text" name="" id=""> -->
+
+                </div>
+                <div class="flex">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+            <!-- column-4 -->
+            <div>
+                <img src="./Images/logo-dark.svg" alt=""
+                loading="lazy"
+                width="120px"
+                height="24px">
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt error suscipit odio hic laboriosam, consequatur quidem quibusdam doloremque, unde, quod sequi voluptatibus deleniti nam quaerat animi? Quas ducimus sint dolore, quo soluta voluptatibus modi fugiat molestiae, hic nemo ut. Saepe quaerat autem nobis libero natus voluptas velit quo et veritatis!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tenetur aliquam est ab officiis natus odit id corporis vitae autem molestias voluptates debitis consectetur velit vero. Quod accusamus accusantium nihil harum possimus voluptate quaerat tempore a impedit dolor? Consequatur maxime consectetur voluptate harum debitis perspiciatis vero recusandae facere qui fugiat!</p>
+
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias corrupti dolores temporibus voluptatum dignissimos vero magni, id impedit. Facilis iure eum eaque odit alias facere aperiam enim laboriosam quisquam voluptatum sed rerum tempore repellendus, ipsum deserunt iusto tenetur nemo!</p>
+                <p class="text-sm text-grayText my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos eum delectus unde. Totam aspernatur facilis corrupti minus velit! Deserunt?</p>
+                <h4></h4>
+                <div>
+                    <!-- <input type="text" name="" id=""> -->
+
+                </div>
+                <div class="flex">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    
     <script>
         feather.replace()
     </script>
