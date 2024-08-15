@@ -47,3 +47,62 @@ rectObj.color="yellow";
 
 delete rectObj.length;
  
+let a=5;
+let b=a;
+
+a++;
+
+console.log(a);
+console.log(b);
+
+
+// let p={value : 10};
+// let q=p;
+
+// p.value++;
+// console.log(p);
+// console.log(q);
+
+
+
+let rectangle={
+            height:1,
+            width:2
+}  
+
+// for(let key in rectangle){
+//     console.log(key+":", rectangle[key]);
+    
+// }
+
+// for(let key of Object.keys(rectangle)){
+//     console.log(key);
+    
+// }
+// for(let key of Object.entries (rectangle)){
+//     console.log(key);
+    
+// }
+
+
+let src={a:10,b:11,c:12}
+console.log(src);
+
+console.log('// spread');
+let dest1={...src};
+console.log(dest1);
+
+
+console.log('// assign');
+let dest2=Object.assign({},src);
+console.log(dest2);
+
+console.log('//iteration');
+
+let dest3={};
+for(let key in src){
+    dest3[key]=src[key];
+}
+console.log(dest3);
+
+
