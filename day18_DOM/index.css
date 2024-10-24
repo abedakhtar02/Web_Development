@@ -7,16 +7,18 @@
 
 body{
     background-color: #222;
+    
 }
 .card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    /* width: 90%;/ */
+    max-width: 100%;
+    background: linear-gradient(270deg, #00feba, #5b548a);
     color: #fff;
-    margin: 100px;
+    /* margin: 100px; */
     border-radius: 2% ;
     padding: 40px 35px;
     text-align: center;
+    /* justify-content: center; */
 }
 
 .search{
@@ -33,9 +35,10 @@ body{
     color: #555;
     padding: 10px 25px;
     height: 60px;
+    width: 60%;
     border-radius: 30px;
     flex: 1;
-    margin-right: 16px;
+    margin-right: 1rem;
     font-size:  18px;
 
 }
@@ -44,9 +47,9 @@ body{
     border: 0;
     outline: 0;
     background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border-radius: 40px;
+    width: 3.75rem;
+    height: 3.75rem;
     cursor: pointer;
 }
 
@@ -72,7 +75,9 @@ body{
 
 .details{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     padding: 0 20px;
     margin-top: 50px;
@@ -81,13 +86,15 @@ body{
     display: flex;
     align-items: center;
     text-align: left ;
+    margin: 1rem;
+
 }
 .col img{
     width: 40px;
     margin-right: 10px;
+    
 }
 .humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
 }
-
